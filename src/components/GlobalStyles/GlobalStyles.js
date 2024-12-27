@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { COLORS, WEIGHTS } from '../../constants';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -58,6 +59,19 @@ table {
 }
 
 #root {
+  --color-white: ${COLORS.white};
+  --color-gray-100: ${COLORS.gray[100]};
+  --color-gray-300: ${COLORS.gray[300]};
+  --color-gray-500: ${COLORS.gray[500]};
+  --color-gray-700: ${COLORS.gray[700]};
+  --color-gray-900: ${COLORS.gray[900]};
+  --color-primary: ${COLORS.primary};
+  --color-secondary: ${COLORS.secondary};
+
+  --font-normal: ${WEIGHTS.normal};
+  --font-medium: ${WEIGHTS.medium};
+  --font-bold: ${WEIGHTS.bold};
+
   /*
     Create a stacking context, without a z-index.
     This ensures that all portal content (modals and tooltips) will
